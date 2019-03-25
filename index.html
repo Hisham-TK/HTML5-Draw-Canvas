@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Draw in Canvas</title>
+    <link rel="stylesheet" href="styles/draw.css">
+    <script src="scripts/draw.js"></script>
+
+</head>
+
+<body>
+    <div id="toolbar" style="display: none">
+        <div id="brush">
+            Brush
+            <!--<img src="./images/brush.png" id="brush_icon" alt="">-->
+            <!-- <div id="size"> size -->
+            <span id="increment">+</span>
+            <span id="brush_size">13</span>
+            <span id="decrement">-</span>
+            <!-- </div> -->
+            <!-- <div id="colors"> -->
+            <div id="color">
+                <label for="user_color">Choose color </label>
+                <input type="color" id="user_color">
+            </div>
+            <span id="clear_colors">Clear Colors</span>
+            <!-- </div> -->
+            <a href="#" id="download" target="_blank"></a>
+            <span id="save">Save</span>
+            <span id="clear_screen">Clear Screen</span>
+
+            <div id="shapes">
+                <label>Brush Shape</label>
+                <span class="shapes" id="circle"></span>
+                <span class="shapes" id="square"></span>
+                <!-- <span id="heart"></span> -->
+                <!-- <input type="color">Brush S</iv> -->
+            </div>
+            <span id="current_user"></span>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="popup">
+        <div id="new_user">
+            New user
+            <input type="text" id="user_name">
+            <br>
+            <input type="button" id="add" value="Add">
+        </div>
+        <div id="vr"></div>
+        <div>
+            Saved users
+            <ul id="old_users"></ul>
+            <input type="button" id="select" value="Select">
+        </div>
+    </div>
+</body>
+
+</html>
